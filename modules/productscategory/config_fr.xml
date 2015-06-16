@@ -2,7 +2,7 @@
 <module>
 	<name>productscategory</name>
 	<displayName><![CDATA[Produits dans la m&ecirc;me cat&eacute;gorie]]></displayName>
-	<version><![CDATA[1.6.3]]></version>
+	<version><![CDATA[1.6.4]]></version>
 	<description><![CDATA[Ajoute un bloc sur la fiche produit pour afficher des produits de la m&ecirc;me cat&eacute;gorie.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
