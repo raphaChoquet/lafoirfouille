@@ -106,6 +106,7 @@ catch (PrestaShopException $e)
 {
 	$e->displayMessage();
 }
+
 define('_THEME_NAME_', $theme_name);
 define('__PS_BASE_URI__', $context->shop->getBaseURI());
 
