@@ -35,7 +35,7 @@ class CrossSelling extends Module
 	{
 		$this->name = 'crossselling';
 		$this->tab = 'front_office_features';
-		$this->version = '0.9.7';
+		$this->version = '0.9.9';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 
@@ -167,7 +167,7 @@ class CrossSelling extends Module
 				}
 
 				$order_products = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
-					SELECT DISTINCT od.product_id, pl.name, pl.link_rewrite, p.reference, i.id_image, product_shop.show_price,
+					SELECT DISTINCT od.product_id, pl.name, pl.description_short, pl.link_rewrite, p.reference, i.id_image, product_shop.show_price,
 						cl.link_rewrite category, p.ean13, stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity
 					FROM '._DB_PREFIX_.'order_detail od
 					LEFT JOIN '._DB_PREFIX_.'product p ON (p.id_product = od.product_id)
@@ -262,7 +262,7 @@ class CrossSelling extends Module
 				}
 
 				$order_products = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
-					SELECT DISTINCT od.product_id, pl.name, pl.link_rewrite, p.reference, i.id_image, product_shop.show_price,
+					SELECT DISTINCT od.product_id, pl.name, pl.description_short, pl.link_rewrite, p.reference, i.id_image, product_shop.show_price,
 						cl.link_rewrite category, p.ean13, stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity
 					FROM '._DB_PREFIX_.'order_detail od
 					LEFT JOIN '._DB_PREFIX_.'product p ON (p.id_product = od.product_id)

@@ -1608,7 +1608,7 @@ table th[class*="col-"] {
   }
   .table-responsive > .table {
     margin-bottom: 0;
-    background-color: #fff;
+    background-color: #f8fcfd;
   }
   .table-responsive > .table > thead > tr > th,
   .table-responsive > .table > thead > tr > td,
